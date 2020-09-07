@@ -23,8 +23,8 @@ public class Queen8Test {
 
     public void check(int n){
         if (n==max){
-            print();
-            return;
+                print();
+                return;
         }
         for (int i = 0; i <queen.length ; i++) {
             queen[n]=i;

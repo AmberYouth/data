@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class QuickSort {
     public static void main(String[] args) {
-        int[] arr = {-9,78,0,23,-567,70};
+        int[] arr = {-9,78,0,23,-567,70,1,60};
         QuickSort.quickSort(arr,0,arr.length-1);
         System.out.println(Arrays.toString(arr));
     }
@@ -30,10 +30,10 @@ public class QuickSort {
             arr[l] = arr[r] ;
             arr[r] = temp;
             if (arr[l]==pivot){
-                r--;
+                l++;
             }
             if (arr[r]==pivot){
-                l++;
+                r--;
             }
         }
             if (l==r){
