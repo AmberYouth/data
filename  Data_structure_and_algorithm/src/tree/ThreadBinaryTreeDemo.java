@@ -31,8 +31,7 @@ public class ThreadBinaryTreeDemo {
 
 class ThreadBinaryTree{
     private HeroNode1 root;
-    private HeroNode1 pre = null;
-
+    private HeroNode1 pre = null ;
     public ThreadBinaryTree(HeroNode1 root) {
         this.root = root;
     }
