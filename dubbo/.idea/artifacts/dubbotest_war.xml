@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dubbotest:war">
+    <output-path>$PROJECT_DIR$/../dubbotest/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>dubbotest</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="001-dubbotest-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="dubbotest:war exploded" />
+    </root>
+  </artifact>
+</component>

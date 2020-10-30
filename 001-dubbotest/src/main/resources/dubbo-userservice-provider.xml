@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+<!-- 服务提供者声明名称:必须保证服务名称的唯一性   -->
+    <dubbo:application name="001-dubbotest-provider"/>
+    <dubbo:protocol name="dubbo" port="20880"/>
+<!--    暴露服务接口dubbo.service-->
+<!--    interface 暴露服务接口的全限定名称-->
+<!--    ref:接口引用的实现类在spring容器的标识-->
+<!--    如果使用直连方式,不使用注册中心,则registry的值为N/A-->
+    <dubbo:service interface="com.yang.dubbo.service.UserService" ref="userService" registry="N/A"/>
+    <bean id="userService" class="com.yang.dubbo.service.serviceImpl.UserServiceImpl" />
+</beans>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd  http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+<!--    声明dubbo服务提供者的名称,保证独一性-->
+    <dubbo:application name="007-zk-userservice-provider"/>
+
+<!--    声明dubbo使用的协议名称和端口号-->
+    <dubbo:protocol port="20880" name="dubbo"/>
+
+<!--    使用zookeeper注册中心-->
+<!--    <dubbo:registry address="zookeeper://192.168.186.129:2181"/>-->
+    <dubbo:registry address="zookeeper://192.168.186.129:2181"/>
+
+    <!--    暴露服务jikou-->
+    <dubbo:service interface="com.yang.dubbo.service.UserService" ref="userServiceImpl" />
+<!--    <dubbo:service interface="com.yang.dubbo.service.UserService" ref="userServiceImpl2" version="2.0.0"/>-->
+<!--    接口实现lei-->
+    <bean id="userServiceImpl" class="com.yang.dubbo.service.UserServiceImpl"/>
+<!--    <bean id="userServiceImpl2" class="com.yang.dubbo.service.UserServiceImpl2"/>-->
+</beans>

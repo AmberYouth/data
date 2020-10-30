@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../007-zk-userservice-provider" />
+    <file type="web" url="file://$PROJECT_DIR$/011-springboot-dubbo-ssm-consumer" />
+    <file type="web" url="file://$PROJECT_DIR$/013-springboot-filter" />
+    <file type="web" url="file://$PROJECT_DIR$/014-springboot-war" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/001-springboot-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/002-springboot-mybatis1/pom.xml" />
+        <option value="$PROJECT_DIR$/003-springboot-mybatis2/pom.xml" />
+        <option value="$PROJECT_DIR$/004-springboot-mvc/pom.xml" />
+        <option value="$PROJECT_DIR$/005-sprinngboot-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/007-springboot-dobbo-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/008-springboot-dubbo-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/../006-springboot-dubbo-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/007-springboot-dubbo-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/009-springboot-dubbo-ssm-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/010-springboot-dubbo-ssm-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/011-springboot-dubbo-ssm-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/012-springboot-intercepter/pom.xml" />
+        <option value="$PROJECT_DIR$/013-springboot-filter/pom.xml" />
+        <option value="$PROJECT_DIR$/014-springboot-war/pom.xml" />
+        <option value="$PROJECT_DIR$/015-springboot-logback/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
